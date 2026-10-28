@@ -3,7 +3,7 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class Library {
-    private static Book[] books = new Book[20];
+    private static final Book[] books = new Book[20];
 
     private static int bigBooks = 20;
 
@@ -35,8 +35,8 @@ public class Library {
 
         while (!isCheck){
             System.out.println("What would you want to see?");
-            System.out.println("1 - See the Available Books");
-            System.out.println("2 - See the Check Out Books");
+            System.out.println("1 - Show the Available Books");
+            System.out.println("2 - Show the Check Out Books");
             System.out.println("3 - Exit");
             System.out.println("Enter your command: ");
 
@@ -44,12 +44,14 @@ public class Library {
 
             switch (command){
                 case 1:
-
-
+                    listAvailableBooks();
+                    break;
                 case 2:
 
+                    break;
                 case 3:
 
+                    break;
                 default:
                     System.out.println("Invalid command.");
                     break;
@@ -57,4 +59,15 @@ public class Library {
 
         }
     }
+
+    public static void listAvailableBooks(){
+        System.out.println("Available Books: ");
+
+        for (int i = 0; i < bigBooks; i++) {
+            System.out.println(books[i]);
+        }
+
+    }
 }
+
+
