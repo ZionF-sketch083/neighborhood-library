@@ -65,9 +65,12 @@ public class Library {
     public static void listAvailableBooks(){
         System.out.println("Available Books: ");
 
-        for (
+        for (int i = 0; i < bigBooks; i++) {
+            System.out.println(books[i]);
 
         }
+
+
 
     }
 }
