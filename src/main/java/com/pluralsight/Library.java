@@ -50,6 +50,8 @@ public class Library {
 
                     break;
                 case 3:
+                    System.out.println("Goodbye. Come back soon.");
+                    isCheck = true;
 
                     break;
                 default:
@@ -63,8 +65,8 @@ public class Library {
     public static void listAvailableBooks(){
         System.out.println("Available Books: ");
 
-        for (int i = 0; i < bigBooks; i++) {
-            System.out.println(books[i]);
+        for (
+
         }
 
     }
